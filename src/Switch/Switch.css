@@ -1,0 +1,31 @@
+.Switch {
+    width: 95px;
+    height: 45px;
+    background-color: #E5E4E4;
+    border:  1px solid #D4D4D4;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease-in-out .13s;
+    display: flex;
+    position: relative;
+}
+.Switch .Switch-toggle {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: #FFF;
+    transition: all ease-in-out .13s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Switch-active {
+    background-color: #3D69BB;
+    border-color: #13336E;
+    }
+
+.Switch-active .Switch-toggle {
+    left: inherit;
+    transform: translateX(50px);
+    }
