@@ -8,6 +8,9 @@
     box-sizing: border-box;
     padding: 50px;
 }
+.Menu-hamburger {
+    display: none;
+}
 .Menu-left {
     display: flex;
     align-items: center;
@@ -22,8 +25,8 @@
     transition: all ease-in-out .1s
 }
 .Menu-left svg.selected {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
 }
 .Menu-left svg.selected path{
     fill: #3D69BB;    
@@ -33,4 +36,24 @@
 }
 .Menu-logo {
     cursor: pointer;
+    width: 10em;
+}
+.Menu-right {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 499px) {
+    .Menu {
+        padding: 5vw;
+        height: 100px;
+    }
+    .Menu-right, .Menu-left {
+        display: none;
+    }
+    .Menu-hamburger {
+        display: block;
+    }
+    .Menu-sun {
+
+    }
 }

@@ -1,6 +1,6 @@
 .Switch {
-    width: 95px;
-    height: 45px;
+    width: 75px;
+    height: 35px;
     background-color: #E5E4E4;
     border:  1px solid #D4D4D4;
     border-radius: 25px;
@@ -8,11 +8,12 @@
     transition: all ease-in-out .13s;
     display: flex;
     position: relative;
+    margin-left: 15px;
 }
 .Switch .Switch-toggle {
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
     background-color: #FFF;
     transition: all ease-in-out .13s;
     position: absolute;
@@ -26,6 +27,5 @@
     }
 
 .Switch-active .Switch-toggle {
-    left: inherit;
-    transform: translateX(50px);
+    transform: translateX(40px);
     }
