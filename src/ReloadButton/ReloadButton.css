@@ -1,0 +1,21 @@
+.RealoadButton {
+    width: 58px;
+    height: 58px;
+    border-radius: 58px;
+    transform: scale(.8);
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 0 4px #464646;
+    cursor: pointer;}
+
+    
+.RealoadButton.animated svg {
+    animation-name: spin;
+    animation-duration: .5s;
+    transition: all ease-in-out;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
